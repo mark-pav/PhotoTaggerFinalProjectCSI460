@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/cameraImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#65647C"
+        android:text="Tag"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/cameraImageView"
+        app:layout_constraintTop_toBottomOf="@+id/cameraImageView" />
+
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tagEditText"
+        app:layout_constraintEnd_toEndOf="@+id/cameraImageView"
+        app:layout_constraintTop_toBottomOf="@+id/cameraImageView" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#FFE15D"
+        android:text="Save"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/captureButton"
+        app:layout_constraintStart_toStartOf="@+id/captureButton" />
+
+    <Button
+        android:id="@+id/loadButton"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#59C1BD"
+        android:text="Load"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/captureButton"
+        app:layout_constraintEnd_toEndOf="@+id/captureButton" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        android:text="Capture"
+        android:id="@+id/captureButton"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#F06292"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
